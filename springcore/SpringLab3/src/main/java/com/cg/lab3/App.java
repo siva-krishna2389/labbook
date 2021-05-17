@@ -21,6 +21,7 @@ public class App
     	App app=new App();
     	AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(JavaConfig.class);
     	SBU sbu=context.getBean(SBU.class);
+    	app.display(sbu);
     	List<Employee>list=sbu.getEmplist();
     	app.display(list);
     	
